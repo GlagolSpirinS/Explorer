@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.IO;
 using Process = System.Diagnostics.Process;
 
 namespace pizda
@@ -121,6 +122,9 @@ namespace pizda
                 case ConsoleKey.F2:
                     AddFile();
                     break;
+                case ConsoleKey.F3:
+                    AddYdoli();
+                    break;
                 case ConsoleKey.Escape:
                     Console.Clear();
                     Console.WriteLine("Программа закрыта");
@@ -130,7 +134,6 @@ namespace pizda
             }
 
             Console.SetCursorPosition(0, position);
-
             Console.WriteLine("->");
             key = Console.ReadKey();
             return key;
@@ -155,9 +158,27 @@ namespace pizda
             Console.SetCursorPosition(65, 3);
             string name = Console.ReadLine();
             string crack = Crack + "\\" + name;
-            File.Create(crack);
+            File.Create(crack).Close();
             Console.Clear();
             PokashiMnyInside();
         }
+        static void AddYdoli()
+        {
+            Console.SetCursorPosition(65, 5);
+            Console.WriteLine("Напишите 'Да', если вы уверены," + "\n" + " что хотите удалить этот файл");
+            string answer = Console.ReadLine();
+            if (answer == "Да")
+            {
+                Directory.Delete(Crack, true);
+
+                File.Delete(Crack);
+            }
+
+
+        }
+
+
     }
+
+
 }

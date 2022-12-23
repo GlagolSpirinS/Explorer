@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\root\\Documents\\GitHub\\Explorer\\pizda\\pizda.csproj",
+      "projectUniqueName": "C:\\Users\\root\\Desktop\\Explorer-main\\pizda\\pizda.csproj",
       "projectName": "pizda",
-      "projectPath": "C:\\Users\\root\\Documents\\GitHub\\Explorer\\pizda\\pizda.csproj",
+      "projectPath": "C:\\Users\\root\\Desktop\\Explorer-main\\pizda\\pizda.csproj",
       "packagesPath": "C:\\Users\\root\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\root\\Documents\\GitHub\\Explorer\\pizda\\obj\\",
+      "outputPath": "C:\\Users\\root\\Desktop\\Explorer-main\\pizda\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\root\\AppData\\Roaming\\NuGet\\NuGet.Config",
