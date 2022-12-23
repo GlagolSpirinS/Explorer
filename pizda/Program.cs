@@ -130,6 +130,7 @@ namespace pizda
             }
 
             Console.SetCursorPosition(0, position);
+
             Console.WriteLine("->");
             key = Console.ReadKey();
             return key;
